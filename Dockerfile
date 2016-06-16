@@ -8,8 +8,6 @@ RUN apt-get install -y git python
 RUN curl -sL https://deb.nodesource.com/setup | sudo -E bash -
 RUN apt-get install -y nodejs
 
-ADD bootstrap.sh /etc/my_init.d/099_bootstrap
-
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # deployer
